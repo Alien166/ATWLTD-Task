@@ -62,4 +62,13 @@ To verify that PHP is working with Apache
 ![Test Apache Setup with index.php File ](./img/indexPHP.png)
 
 
+### `index.php`
+
+This file serves as the main entry point for the simple PHP-based webpage hosted as part of the LAMP stack setup task. that can display dynamic content from the server.
+
+- The file outputs a simple welcome message to verify PHP functionality with Apache.
+- It is designed to test the connection between PHP and the Apache server
+
+
+
 ![Test Apache Setup with index.php File ](./img/PHP-2.png)
