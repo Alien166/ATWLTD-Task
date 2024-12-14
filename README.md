@@ -1,4 +1,4 @@
-# Setting Up a Basic LAMP Stack 
+# Setting Up For Basic LAMP Stack 
 
 I will set up a LAMP stack (Linux, Apache, MySQL, PHP) on a Linux server. The goal is to host a simple PHP-based webpage, integrate database functionality, and make it accessible externally via a public URL.
 
