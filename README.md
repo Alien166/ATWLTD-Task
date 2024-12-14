@@ -40,7 +40,7 @@ $ sudo systemctl start mariadb
 
 ```
 
-### 4. **Check the services are running **
+### 4. **Check the services are running**
 
 ```bash
 $ sudo systemctl status httpd
@@ -56,7 +56,7 @@ Apache by default serves files from /var/www/html/.  to test the setup
 
 
 
-### 6. ** Test PHP**
+### 6. **Test PHP**
 To verify that PHP is working with Apache
 
 ![Test Apache Setup with index.php File ](./img/indexPHP.png)
