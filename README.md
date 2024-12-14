@@ -56,7 +56,7 @@ Apache by default serves files from /var/www/html/.  to test the setup
 
 
 
-### 5. ** Test PHP**
+### 6. ** Test PHP**
 To verify that PHP is working with Apache
 
 ![Test Apache Setup with index.php File ](./img/indexPHP.png)
