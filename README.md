@@ -6,8 +6,8 @@ I will set up a LAMP stack (Linux, Apache, MySQL, PHP) on a Linux server. The go
 - **Web Server:** Apache
 - **Database Server:** MariaDB
 - **Programming Language:** PHP
-- **Operating System:** Ubuntu 20.04 or later
-
+- **Operating System:** Ubuntu
+- 
 Each section below includes detailed steps for installation and configuration.
 
 
