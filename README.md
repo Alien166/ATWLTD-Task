@@ -1,6 +1,6 @@
 # Setting Up For Basic LAMP Stack 
 
-Test the Public  via a public URL on http://3.89.204.96/index.php .
+Test the LAMP Stack via a public URL on http://3.89.204.96/index.php .
 
 
 - **Web Server:** Apache
