@@ -76,7 +76,7 @@ This file serves as the main entry point for the simple PHP-based webpage hosted
 
 ---
 
-# LAMP Stack on AWS Cloud
+# sub task #2 : LAMP Stack on AWS Cloud
 
 Test the Public  via a public URL on http://3.89.204.96/index.php  .
 
@@ -139,3 +139,71 @@ To verify that PHP is working with Apache
 
 
 ![Test Apache Setup with index.php File ](./img/cloud-php-4.png)
+
+
+
+---
+
+## Sub-task #3: Networking Basics
+
+### 1. **IP Address**
+
+ is a unique identifier assigned to every device connected to a network. Its purpose is to enable communication between devices over the internet or within a local network. IP addresses can be either:
+
+- **IPv4 :** A 32-bit address, typically written in four groups of numbers separated by periods (e.g., 192.168.1.1).
+- **IPv6 :** A 128-bit address, written in eight groups of four hexadecimal digits separated by colons (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
+
+An IP address helps route traffic to the correct destination on a network, enabling devices to communicate.
+
+---
+
+### 2. **MAC Address**
+
+A **MAC address** is a unique identifier assigned to a network interface card (NIC) for use as a network address in communications within a network segment. 
+
+- The MAC address is used for identifying devices on a local network (LAN) and is essential for data transfer at the data link layer of the OSI model.
+- It is a 48-bit address (e.g., `00:1A:2B:3C:4D:5E`), written in hexadecimal.
+
+**Key Differences between MAC and IP Addresses:**
+- A MAC address operates within a local network (LAN), whereas an IP address operates across networks (e.g., on the internet).
+- A MAC address is generally fixed to the hardware (NIC), while an IP address can change depending on the network or its configuration.
+- *The MAC address works at the data link layer (Layer 2) of the OSI model, while the IP address works at the network layer (Layer 3).
+
+---
+
+### 3. **Switches, Routers, and Routing Protocols**
+
+- **Switches:**
+  is a device that connects multiple devices within a local area network (LAN). It operates at the data link layer and forwards data frames based on MAC addresses. It 
+  ensures efficient communication between devices in the same network.
+
+- **Routers:**
+  is a device that connects different networks, such as LANs to WANs (Wide Area Networks) or to the internet. It operates at the network layer and forwards packets based 
+  on their IP addresses. Routers determine the best path for data to travel across networks using routing tables.
+
+- **Routing Protocols:**
+  Routing protocols define the rules that routers follow to determine the most efficient route for forwarding data. Common routing protocols include:
+  - **RIP (Routing Information Protocol):** A distance-vector routing protocol that uses hop count as its metric.
+  - **OSPF (Open Shortest Path First):** A link-state routing protocol that uses the shortest path algorithm to find the best route.
+  - **BGP (Border Gateway Protocol):** A path vector protocol used to exchange routing information between different autonomous systems on the internet.
+
+---
+
+### 4. **Remote Connection to Cloud Instance: Steps to Connect to a Cloud-Based Linux Instance from a Remote Machine (e.g., Using SSH)**
+
+To connect to your cloud-based Linux instance remotely, you will typically use **SSH (Secure Shell)**. Below are the steps:
+
+1. **Obtain SSH Access Credentials:**
+   - Ensure you have the **private key** (for key-based authentication) or the **username and password** to connect to your server.
+   - If you're using AWS EC2, the private key file is downloaded when you create your instance.
+
+2. **Check Security Group Settings:**
+   - Make sure the **security group** for your cloud instance allows inbound traffic on port **22** (default for SSH).
+
+3. **Connect via SSH:**
+   - Open a terminal on your local machine and use the following command to connect to the remote server:
+
+   ```bash
+
+   # For Windows (using Git Bash or similar):
+   $ ssh -i "C:/path/to/your-key.pem" ubuntu@<your-public-ip>
