@@ -1,11 +1,11 @@
 resource "aws_instance" "web_server" {
   ami           = var.ami
-  instance_type = var.instance_type 
+  instance_type = var.instance_type
 
-  security_groups = [aws_security_group.web_sg.name] 
-  key_name = "my-key-pair"
+  security_groups = [aws_security_group.web_sg.name]
+  key_name        = "web-rsa"
 
-   user_data = <<-EOF
+  user_data = <<-EOF
               #!/bin/bash
               apt-get update -y
               apt-get install apache2 -y
@@ -18,6 +18,6 @@ resource "aws_instance" "web_server" {
               EOF
 
   tags = {
-    Name = "WebServer" 
+    Name = "WebServer"
   }
 }
