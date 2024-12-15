@@ -76,7 +76,7 @@ This file serves as the main entry point for the simple PHP-based webpage hosted
 
 ---
 
-#LAMP Stack on AWS Cloud
+# LAMP Stack on AWS Cloud
 
 Test the Public  via a public URL on http://3.89.204.96/index.php  .
 
