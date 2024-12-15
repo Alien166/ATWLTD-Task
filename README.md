@@ -204,6 +204,4 @@ To connect to your cloud-based Linux instance remotely, you will typically use *
    - Open a terminal on your local machine and use the following command to connect to the remote server:
 
    ```bash
-
-   # For Windows (using Git Bash or similar):
-   $ ssh -i "C:/path/to/your-key.pem" ubuntu@<your-public-ip>
+   $ ssh -i /path/to/your-key.pem ubuntu@<your-public-ip>
